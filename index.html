@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>labyrinthe</title>
+
+</head>
+
+<body>
+<section class="title">
+    <div class="container">
+        <h1>Résolution <span>Labyrint<span id="cheat">h</span>es</span></h1>
+    </div>
+</section>
+
+<section class="select">
+    <div class="container">
+        <select id="selectCase" class="form-select"></select>
+        <select id="selectEx" class="form-select"></select>
+        <button id="valid" class="btn"> Select</button>
+    </div>
+</section>
+
+<section class="labyrinthe">
+    <div class="container">
+        <div id="showLaby"></div>
+        <p id="textPlay">Press play button to play</p>
+        <div>
+            <button id="play" class="btn" disabled>Play</button>
+            <button id="resolve" class="btn" disabled>Resolve <span id="timer">60s</span></button>
+
+        </div>
+
+    </div>
+</section>
+
+<div class="modal" tabindex="-1" id="modalWin">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">You Win !</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Vous avez resolu ce labyrinthe.</p>
+                <p> Êtes-vous prêt à passer au niveau supérieur ?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-non" data-bs-dismiss="modal">Non</button>
+                <button type="button" class="btn btn-primary btn-next" id="nextLevel">Accepter le défi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="Class/Player.js"></script>
+    <script src="Class/Case.js"></script>
+    <script src="Class/Labyrinthe.js"></script>
+    <script src="labyrinthes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body{
+    background-color: #D9D7D2;
+}
+section.title{
+    background-color: #8C5E4D;
+}
+section.title .container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section.title h1{
+   color: #D9D7D2;
+    font-size: 4em;
+}
+
+section.select{
+    height: 100px;
+    background-color: #59343B;
+    display: flex;
+    justify-content: center;
+}
+section.select .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.select select, section.select button{
+    width: auto;
+    padding: 8px 24px;
+    margin: 0 6px;
+}
+section.select button{
+    border: 1px solid #D9D7D2;
+    color: #D9D7D2;
+}
+section.select button:hover{
+    background-color: #D9D7D2;
+    color: #59343B;
+}
+
+section.labyrinthe{
+    padding-top: 50px;
+}
+section.labyrinthe .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+section.labyrinthe button{
+    padding: 8px 24px;
+    background-color:  #59343B;
+    color: #D9D7D2;
+}
+section.labyrinthe p{
+    font-style: italic;
+    font-size: 12px;
+    margin: 6px 0;
+}
+section.labyrinthe button:hover{
+    background-color:  #40252A;
+    color: #D9D7D2;
+}
+section.labyrinthe #showLaby{
+    margin-bottom: 25px;
+}
+section.labyrinthe #board {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid #696969;
+    box-sizing: content-box;
+    box-shadow: 0 0 10px rgba(89,52,59,0.5);
+}
+.modal-header{
+    border-bottom: none;
+    background-color: #8C5E4D;
+    color: white;
+}
+.modal-content{
+    background-color: #8C5E4D;
+    color: white;
+}
+.modal-footer{
+    background-color: #59343B;
+    border-top: none;
+}
+.modal .btn-non{
+    padding: 8px 24px;
+    background-color:  #59343B;
+    border: 1px solid #D9D7D2;
+    color: #D9D7D2;
+}
+.modal .btn-non:hover{
+    background-color:  #40252A;
+}
+.modal .btn-next{
+    padding: 8px 24px;
+    background-color: #D9D7D2;
+    color: #59343B;
+    border: 1px solid #D9D7D2;
+}.modal .btn-next:hover{
+     background-color:  #8C5E4D;
+     border: 1px solid #D9D7D2;
+     color: #D9D7D2;
+ }
+
+.btn:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
